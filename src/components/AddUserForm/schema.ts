@@ -7,19 +7,13 @@ export const addUserSchema = z.object({
   phone: z.string().min(1, "Telefonní číslo je povinné").regex(/^[+\d\s]*$/, "Telefonní číslo může obsahovat pouze číslice, mezery a znak +"),
   website: z.string().url("URL musí být platná (https://url)").min(1, "Webová stránka je povinná"),
   address: z.object({
-    street: z.string().min(1, "Ulice je povinná"),
+    street: z.string(),
     suite: z.string(),
-    city: z.string().min(1, "Město je povinné"),
-    zipcode: z.string().min(1, "PSČ je povinné"),
-    geo: z.object({
-      lat: z.string(),
-      lng: z.string(),
-    }),
+    city: z.string(),
+    zipcode: z.string(),
   }),
   company: z.object({
-    name: z.string().min(1, "Název společnosti je povinný"),
-    catchPhrase: z.string(),
-    bs: z.string(),
+    name: z.string(),
   }),
 });
 

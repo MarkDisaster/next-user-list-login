@@ -8,7 +8,7 @@ export type User = {
     suite: string
     city: string
     zipcode: string
-    geo: {
+    geo?: {
       lat: string
       lng: string
     }
@@ -17,7 +17,7 @@ export type User = {
   website: string
   company: {
     name: string
-    catchPhrase: string
-    bs: string
+    catchPhrase?: string
+    bs?: string
   }
 }

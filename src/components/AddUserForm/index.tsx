@@ -27,15 +27,9 @@ export const AddUserForm = () => {
         suite: "",
         city: "",
         zipcode: "",
-        geo: {
-          lat: "",
-          lng: "",
-        },
       },
       company: {
         name: "",
-        catchPhrase: "",
-        bs: "",
       },
     },
   });
@@ -112,32 +106,9 @@ export const AddUserForm = () => {
         />
       </div>
 
-      <div className="flex gap-4">
-        <InputText
-          name="address.geo.lat"
-          placeholder="Latitude"
-          control={formMethods.control}
-        />
-        <InputText
-          name="address.geo.lng"
-          placeholder="Longitude"
-          control={formMethods.control}
-        />
-      </div>
-
       <InputText
         name="company.name"
         placeholder="Company Name"
-        control={formMethods.control}
-      />
-      <InputText
-        name="company.catchPhrase"
-        placeholder="Catch Phrase"
-        control={formMethods.control}
-      />
-      <InputText
-        name="company.bs"
-        placeholder="BS"
         control={formMethods.control}
       />
 
