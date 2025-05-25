@@ -24,7 +24,6 @@ export const AddUserForm = () => {
       website: "",
       address: {
         street: "",
-        suite: "",
         city: "",
         zipcode: "",
       },
@@ -80,18 +79,11 @@ export const AddUserForm = () => {
         control={formMethods.control}
       />
 
-      <div className="flex gap-4">
-        <InputText
-          name="address.street"
-          placeholder="Ulice"
-          control={formMethods.control}
-        />
-        <InputText
-          name="address.suite"
-          placeholder="Suite"
-          control={formMethods.control}
-        />
-      </div>
+      <InputText
+        name="address.street"
+        placeholder="Ulice"
+        control={formMethods.control}
+      />
 
       <div className="flex gap-4">
         <InputText

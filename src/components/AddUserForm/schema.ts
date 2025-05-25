@@ -8,7 +8,6 @@ export const addUserSchema = z.object({
   website: z.string().url("URL musí být platná (https://url)").min(1, "Webová stránka je povinná"),
   address: z.object({
     street: z.string(),
-    suite: z.string(),
     city: z.string(),
     zipcode: z.string(),
   }),
