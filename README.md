@@ -14,5 +14,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 Create a .env file and add the variable
 ```bash
-NEXTAUTH_SECRET`
-``
+NEXTAUTH_SECRET
+```
