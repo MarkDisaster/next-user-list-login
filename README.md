@@ -2,7 +2,7 @@
 
 Create a .env file and add the variable:
 ```bash
-NEXTAUTH_SECRET
+NEXTAUTH_SECRET=your-secret-key
 ```
 
 ## Run app
