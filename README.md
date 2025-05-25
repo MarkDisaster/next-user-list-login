@@ -1,6 +1,13 @@
-## Getting Started
+## .env
 
-First, run the development server:
+Create a .env file and add the variable:
+```bash
+NEXTAUTH_SECRET
+```
+
+## Run app
+
+Run the development server:
 
 ```bash
 pnpm run dev
@@ -9,10 +16,3 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## .env
-
-Create a .env file and add the variable
-```bash
-NEXTAUTH_SECRET
-```
