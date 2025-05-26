@@ -2,10 +2,10 @@
 
 import { useForm } from "react-hook-form";
 import { signIn } from "next-auth/react";
-import { InputText } from "@/components/UI/Form/InputText";
-import { Form } from "@/components/UI/Form/Form";
-import { InputPassword } from "@/components/UI/Form/InputPassword";
-import { Button } from "@/components/UI/Button";
+import { InputText } from "@/features/components/UI/Form/InputText";
+import { Form } from "@/features/components/UI/Form/Form";
+import { InputPassword } from "@/features/components/UI/Form/InputPassword";
+import { Button } from "@/features/components/UI/Button";
 
 type LoginFormType = {
   email: string;

@@ -4,12 +4,12 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import {
   addUserSchema,
   AddUserFormType,
-} from "@/components/AddUserForm/schema";
+} from "@/features/components/AddUserForm/schema";
 import { useUsers } from "@/features/hooks/useUsers";
 import { useForm } from "react-hook-form";
-import { Form } from "@/components/UI/Form/Form";
-import { InputText } from "@/components/UI/Form/InputText";
-import { Button } from "@/components/UI/Button";
+import { Form } from "@/features/components/UI/Form/Form";
+import { InputText } from "@/features/components/UI/Form/InputText";
+import { Button } from "@/features/components/UI/Button";
 import { useModal } from "../UI/Modal/context";
 
 export const AddUserForm = () => {

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import QueryClientProviderWrapper from "@/features/api/queryClientProviderWrapper";
-import { ModalProvider } from "@/components/UI/Modal/context";
-import { Modal } from "@/components/UI/Modal";
+import { ModalProvider } from "@/features/components/UI/Modal/context";
+import { Modal } from "@/features/components/UI/Modal";
 
 import "./globals.css";
 import { NextAuthProvider } from "@/features/auth/provider";

@@ -1,4 +1,4 @@
-import { Header } from "@/components/Header";
+import { Header } from "@/features/components/Header";
 
 const LocaleLayout = ({
   children,
