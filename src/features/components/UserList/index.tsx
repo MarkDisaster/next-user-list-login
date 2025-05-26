@@ -1,9 +1,9 @@
 "use client";
 
 import { useUsers } from "@/features/hooks/useUsers";
-import { AddUserForm } from "@/components/AddUserForm";
-import { Button } from "@/components/UI/Button";
-import { useModal } from "@/components/UI/Modal/context";
+import { AddUserForm } from "@/features/components/AddUserForm";
+import { Button } from "@/features/components/UI/Button";
+import { useModal } from "@/features/components/UI/Modal/context";
 
 export const UserList = () => {
   const { users, page, totalPages, setPage } = useUsers();
