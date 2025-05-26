@@ -39,7 +39,7 @@ export const AddUserForm = () => {
   const onSubmit = (data: AddUserFormType) => {
     addUser({
       ...data,
-      id: users[users.length - 1].id++,
+      id: users[0].id + 1,
     });
     closeModal();
   };
